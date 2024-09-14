@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="container">
+            <input type="text" id="input" readonly>
+            <div class="buttons">
+                <button class="op" id="mod"
+                 onclick="
+                clicked=document.querySelector('#mod').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;"  >%</button>
+                <button class="op" id="c"
+                onclick="
+                clicked=document.querySelector('#c').textContent;
+                display=' ';
+                document.querySelector('#input').value=display;" >c</button>
+               
+               <button class="op"id="del"
+               onclick="
+                display=Math.floor(display/10)
+               
+                if (display=='0'){
+                    display='';
+                    document.querySelector('#input').value=display;
+                }
+                document.querySelector('#input').value=display;" >del</button>
+                <br>
+                <button class="devide"onclick="
+                let clicked=document.querySelector('.devide').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;">/</button>
+
+                <button class="seven" onclick="
+                let clicked=document.querySelector('.seven').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" 
+                >7</button>
+
+                <button class="eight"
+                onclick="
+                clicked=document.querySelector('.eight').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >8</button>
+                <button class="nine"onclick="
+                clicked=document.querySelector('.nine').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >9</button><br>
+                <button class="mul"onclick="
+                clicked=document.querySelector('.mul').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >*</button>
+                <button class="four"
+                onclick="
+                clicked=document.querySelector('.four').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >4</button>
+                <button class="five"onclick="
+                clicked=document.querySelector('.five').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >5</button>
+                <button class="six"onclick="
+                clicked=document.querySelector('.six').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >6</button><br>
+                <button class="sub"onclick="
+                clicked=document.querySelector('.sub').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >-</button>
+             
+                <button class="one"onclick="
+                clicked=document.querySelector('.one').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >1</button>
+                <button class="two"onclick="
+                clicked=document.querySelector('.two').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >2</button>
+                <button class="three"onclick="
+                clicked=document.querySelector('.three').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >3</button><br>
+                <button class="plus"onclick="
+                clicked=document.querySelector('.plus').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >+</button>
+                <button class="zero"onclick="
+                clicked=document.querySelector('.zero').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >0</button>
+                <button class="point"onclick="
+                clicked=document.querySelector('.point').textContent;
+                display+=clicked;
+                document.querySelector('#input').value=display;" >.</button>
+                <button class="result"onclick="
+                display=eval(display);
+                document.querySelector('#input').value=display;" >=</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let display="";
+      
+       
+    </script>
+</body>
+</html>

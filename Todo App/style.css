@@ -1,0 +1,43 @@
+.inputs{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.add-button{
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgb(71, 214, 9);
+    color:darkblue;
+}
+.delete-button{
+    padding: 7px;
+    background-color: rgb(78, 24, 130);
+    color: white;
+    border-radius: 5px;  
+}
+body{
+    color: white;
+    background-color: rgb(249, 202, 202);
+}
+.maindiv{
+border: 1px solid rebeccapurple;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+background-color: rgb(71, 62, 80);
+width: 700px;
+border-radius: 10px;
+}
+.outer{
+display: flex;
+justify-content: center;  
+margin-top: 100px;   
+}
+.addeditemscontainer{
+display: grid;
+grid-template-columns: 220px 115px 100px;
+align-items: center;
+margin-top: 15px;
+padding-bottom: 50px;   
+}
